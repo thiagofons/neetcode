@@ -1,5 +1,6 @@
 import string
 
+
 class Solution:
   def isPalindrome(self, s: str) -> bool:
     i = 0
@@ -7,7 +8,7 @@ class Solution:
 
     # Remove all the spaces
     for _ in s:
-      if s[i].isalpha():
+      if s[i].isalnum():
         aux = list(s)
         aux[j] = aux[i].lower()
         s = "".join(aux)
@@ -31,7 +32,6 @@ class Solution:
       j -= 1
 
     return True
-  
 
 solution = Solution()
 
